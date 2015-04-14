@@ -5,6 +5,36 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B75CDDE01ADD9DF7002A7CC0"
+               BuildableName = "bml_day2_CustomTable.app"
+               BlueprintName = "bml_day2_CustomTable"
+               ReferencedContainer = "container:bml_day2_CustomTable.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B75CDDF91ADD9DF7002A7CC0"
+               BuildableName = "bml_day2_CustomTableTests.xctest"
+               BlueprintName = "bml_day2_CustomTableTests"
+               ReferencedContainer = "container:bml_day2_CustomTable.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -12,7 +42,26 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B75CDDF91ADD9DF7002A7CC0"
+               BuildableName = "bml_day2_CustomTableTests.xctest"
+               BlueprintName = "bml_day2_CustomTableTests"
+               ReferencedContainer = "container:bml_day2_CustomTable.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B75CDDE01ADD9DF7002A7CC0"
+            BuildableName = "bml_day2_CustomTable.app"
+            BlueprintName = "bml_day2_CustomTable"
+            ReferencedContainer = "container:bml_day2_CustomTable.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -23,6 +72,16 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B75CDDE01ADD9DF7002A7CC0"
+            BuildableName = "bml_day2_CustomTable.app"
+            BlueprintName = "bml_day2_CustomTable"
+            ReferencedContainer = "container:bml_day2_CustomTable.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -32,6 +91,16 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B75CDDE01ADD9DF7002A7CC0"
+            BuildableName = "bml_day2_CustomTable.app"
+            BlueprintName = "bml_day2_CustomTable"
+            ReferencedContainer = "container:bml_day2_CustomTable.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

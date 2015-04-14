@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CustomTableViewController.h
 //  bml_day2_CustomTable
 //
 //  Created by Vincent Renais on 2015-04-14.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomTableViewCell.h"
 
-@interface ViewController : UIViewController
-
+@interface CustomTableViewController : UITableViewController
 
 @end
-

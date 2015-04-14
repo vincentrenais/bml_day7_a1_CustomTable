@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		B75CDDE71ADD9DF7002A7CC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B75CDDE61ADD9DF7002A7CC0 /* main.m */; };
 		B75CDDEA1ADD9DF7002A7CC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B75CDDE91ADD9DF7002A7CC0 /* AppDelegate.m */; };
-		B75CDDED1ADD9DF7002A7CC0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B75CDDEC1ADD9DF7002A7CC0 /* ViewController.m */; };
 		B75CDDF01ADD9DF7002A7CC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B75CDDEE1ADD9DF7002A7CC0 /* Main.storyboard */; };
 		B75CDDF21ADD9DF7002A7CC0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B75CDDF11ADD9DF7002A7CC0 /* Images.xcassets */; };
 		B75CDDF51ADD9DF7002A7CC0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B75CDDF31ADD9DF7002A7CC0 /* LaunchScreen.xib */; };
 		B75CDE011ADD9DF7002A7CC0 /* bml_day2_CustomTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B75CDE001ADD9DF7002A7CC0 /* bml_day2_CustomTableTests.m */; };
+		B75CDE0F1ADDA2B2002A7CC0 /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B75CDE0E1ADDA2B2002A7CC0 /* CustomTableViewController.m */; };
+		B75CDE121ADDB3D1002A7CC0 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B75CDE111ADDB3D1002A7CC0 /* CustomTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,16 @@
 		B75CDDE61ADD9DF7002A7CC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B75CDDE81ADD9DF7002A7CC0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B75CDDE91ADD9DF7002A7CC0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B75CDDEB1ADD9DF7002A7CC0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B75CDDEC1ADD9DF7002A7CC0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B75CDDEF1ADD9DF7002A7CC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B75CDDF11ADD9DF7002A7CC0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B75CDDF41ADD9DF7002A7CC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B75CDDFA1ADD9DF7002A7CC0 /* bml_day2_CustomTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bml_day2_CustomTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75CDDFF1ADD9DF7002A7CC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B75CDE001ADD9DF7002A7CC0 /* bml_day2_CustomTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bml_day2_CustomTableTests.m; sourceTree = "<group>"; };
+		B75CDE0D1ADDA2B2002A7CC0 /* CustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewController.h; sourceTree = "<group>"; };
+		B75CDE0E1ADDA2B2002A7CC0 /* CustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewController.m; sourceTree = "<group>"; };
+		B75CDE101ADDB3D1002A7CC0 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		B75CDE111ADDB3D1002A7CC0 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +84,12 @@
 		B75CDDE31ADD9DF7002A7CC0 /* bml_day2_CustomTable */ = {
 			isa = PBXGroup;
 			children = (
+				B75CDE101ADDB3D1002A7CC0 /* CustomTableViewCell.h */,
+				B75CDE111ADDB3D1002A7CC0 /* CustomTableViewCell.m */,
+				B75CDE0D1ADDA2B2002A7CC0 /* CustomTableViewController.h */,
+				B75CDE0E1ADDA2B2002A7CC0 /* CustomTableViewController.m */,
 				B75CDDE81ADD9DF7002A7CC0 /* AppDelegate.h */,
 				B75CDDE91ADD9DF7002A7CC0 /* AppDelegate.m */,
-				B75CDDEB1ADD9DF7002A7CC0 /* ViewController.h */,
-				B75CDDEC1ADD9DF7002A7CC0 /* ViewController.m */,
 				B75CDDEE1ADD9DF7002A7CC0 /* Main.storyboard */,
 				B75CDDF11ADD9DF7002A7CC0 /* Images.xcassets */,
 				B75CDDF31ADD9DF7002A7CC0 /* LaunchScreen.xib */,
@@ -219,8 +224,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B75CDDED1ADD9DF7002A7CC0 /* ViewController.m in Sources */,
 				B75CDDEA1ADD9DF7002A7CC0 /* AppDelegate.m in Sources */,
+				B75CDE0F1ADDA2B2002A7CC0 /* CustomTableViewController.m in Sources */,
+				B75CDE121ADDB3D1002A7CC0 /* CustomTableViewCell.m in Sources */,
 				B75CDDE71ADD9DF7002A7CC0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

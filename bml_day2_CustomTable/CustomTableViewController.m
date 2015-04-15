@@ -15,9 +15,9 @@
 
 @implementation CustomTableViewController
 {
-    NSArray *recipeNames;
-    NSArray *recipeImages;
-    NSArray *recipePrepTime;
+    NSMutableArray *recipeNames;
+    NSMutableArray *recipeImages;
+    NSMutableArray *recipePrepTime;
     BOOL recipeChecked[16];
 }
 
@@ -25,11 +25,12 @@
     [super viewDidLoad];
     
     
-    recipeNames = @[@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini"];
+    recipeNames = [NSMutableArray arrayWithObjects: @"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
     
-    recipePrepTime = @[@"30Min", @"36Min", @"54Min", @"25Min", @"54Min", @"25Min", @"36Min", @"30Min", @"54Min", @"30Min", @"54Min", @"36Min", @"54Min", @"36Min", @"54Min", @"36Min"];
     
-    recipeImages = @[@"egg_benedict.jpg", @"mushroom_risotto.jpg", @"full_breakfast.jpg", @"hamburger.jpg", @"ham_and_egg_sandwich.jpg", @"creme_brelee.jpg", @"white_chocolate_donut.jpg", @"starbucks_coffee.jpg", @"vegetable_curry.jpg", @"instant_noodle_with_egg.jpg", @"noodle_with_bbq_pork.jpg", @"japanese_noodle_with_pork.jpg", @"green_tea.jpg", @"thai_shrimp_cake.jpg", @"angry_birds_cake.jpg", @"ham_and_cheese_panini.jpg"];
+    recipePrepTime = [NSMutableArray arrayWithObjects: @"30Min", @"36Min", @"54Min", @"25Min", @"54Min", @"25Min", @"36Min", @"30Min", @"54Min", @"30Min", @"54Min", @"36Min", @"54Min", @"36Min", @"54Min", @"36Min", nil];
+    
+    recipeImages = [NSMutableArray arrayWithObjects: @"egg_benedict.jpg", @"mushroom_risotto.jpg", @"full_breakfast.jpg", @"hamburger.jpg", @"ham_and_egg_sandwich.jpg", @"creme_brelee.jpg", @"white_chocolate_donut.jpg", @"starbucks_coffee.jpg", @"vegetable_curry.jpg", @"instant_noodle_with_egg.jpg", @"noodle_with_bbq_pork.jpg", @"japanese_noodle_with_pork.jpg", @"green_tea.jpg", @"thai_shrimp_cake.jpg", @"angry_birds_cake.jpg", @"ham_and_cheese_panini.jpg", nil];
 
 }
 
@@ -80,6 +81,19 @@
     }
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:
+(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Remove the row from data model
+    [recipeNames removeObjectAtIndex:indexPath.row];
+    [recipePrepTime removeObjectAtIndex:indexPath.row];
+    [recipeImages removeObjectAtIndex:indexPath.row];
+    
+    // Request table view to reload
+    // [tableView reloadData];
+    [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

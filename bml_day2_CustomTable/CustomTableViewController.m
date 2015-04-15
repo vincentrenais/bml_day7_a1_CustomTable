@@ -7,6 +7,7 @@
 //
 
 #import "CustomTableViewController.h"
+#import "CustomTableViewCell.h"
 
 @interface CustomTableViewController ()
 
@@ -17,6 +18,7 @@
     NSArray *recipeNames;
     NSArray *recipeImages;
     NSArray *recipePrepTime;
+    BOOL recipeChecked[16];
 }
 
 - (void)viewDidLoad {
@@ -60,6 +62,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     static NSString *cellIdentifier = @"Cell";
+    
     CustomTableViewCell *cell = (CustomTableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     cell.nameLabel.text = [recipeNames objectAtIndex:indexPath.row];
@@ -70,9 +73,44 @@
     
     // Configure the cell...
     
+    if (recipeChecked[indexPath.row]) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+    
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSString *selectedRecipe = [recipeNames objectAtIndex:indexPath.row];
+    
+    UIAlertView *messageAlert = [[UIAlertView alloc]initWithTitle:@"Row Selected" message:selectedRecipe delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    
+    // Display message alert
+    
+    [messageAlert show];
+    
+        UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    if (recipeChecked[indexPath.row]) {
+    
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+        recipeChecked[indexPath.row] = NO;
+        
+    } else {
+        
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        
+        recipeChecked[indexPath.row] = YES;
+    }
+}
 
 /*
 // Override to support conditional editing of the table view.

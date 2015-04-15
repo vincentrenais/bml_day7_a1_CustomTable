@@ -100,18 +100,16 @@
     
             cell.accessoryType = UITableViewCellAccessoryCheckmark;
     
-            [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
             recipeChecked[indexPath.row] = YES;
         
         } else {
         
             cell.accessoryType = UITableViewCellAccessoryNone;
         
-            [tableView deselectRowAtIndexPath:indexPath animated:YES];
-        
             recipeChecked[indexPath.row] = NO;
     }
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 /*

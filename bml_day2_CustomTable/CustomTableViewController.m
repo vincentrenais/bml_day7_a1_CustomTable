@@ -92,23 +92,25 @@
     
     [messageAlert show];
     
+    // Code to toggle the checkmark
+    
         UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     
-    if (recipeChecked[indexPath.row]) {
+        if (!recipeChecked[indexPath.row]) {
     
-        cell.accessoryType = UITableViewCellAccessoryNone;
+            cell.accessoryType = UITableViewCellAccessoryCheckmark;
     
-        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+            [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-        recipeChecked[indexPath.row] = NO;
+            recipeChecked[indexPath.row] = YES;
         
-    } else {
+        } else {
         
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+            cell.accessoryType = UITableViewCellAccessoryNone;
         
-        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+            [tableView deselectRowAtIndexPath:indexPath animated:YES];
         
-        recipeChecked[indexPath.row] = YES;
+            recipeChecked[indexPath.row] = NO;
     }
 }
 

@@ -25,7 +25,7 @@
     [super viewDidLoad];
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"recipes" ofType:@"plist"];
-    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
     recipeNames = [dict objectForKey:@"Name"];
     recipeImages = [dict objectForKey:@"Image"];
     recipePrepTime = [dict objectForKey:@"PrepTime"];

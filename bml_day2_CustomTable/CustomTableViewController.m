@@ -19,6 +19,7 @@
     NSMutableArray *recipeImages;
     NSMutableArray *recipePrepTime;
     BOOL recipeChecked[16];
+    
 }
 
 - (void)viewDidLoad {

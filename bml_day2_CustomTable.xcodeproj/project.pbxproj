@@ -15,6 +15,7 @@
 		B75CDE011ADD9DF7002A7CC0 /* bml_day2_CustomTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B75CDE001ADD9DF7002A7CC0 /* bml_day2_CustomTableTests.m */; };
 		B75CDE0F1ADDA2B2002A7CC0 /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B75CDE0E1ADDA2B2002A7CC0 /* CustomTableViewController.m */; };
 		B75CDE121ADDB3D1002A7CC0 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B75CDE111ADDB3D1002A7CC0 /* CustomTableViewCell.m */; };
+		B78F28701AE024430076ED65 /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = B78F286F1AE024420076ED65 /* recipes.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		B75CDE0E1ADDA2B2002A7CC0 /* CustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewController.m; sourceTree = "<group>"; };
 		B75CDE101ADDB3D1002A7CC0 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		B75CDE111ADDB3D1002A7CC0 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		B78F286F1AE024420076ED65 /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipes.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				B75CDDF11ADD9DF7002A7CC0 /* Images.xcassets */,
 				B75CDDF31ADD9DF7002A7CC0 /* LaunchScreen.xib */,
 				B75CDDE41ADD9DF7002A7CC0 /* Supporting Files */,
+				B78F286F1AE024420076ED65 /* recipes.plist */,
 			);
 			path = bml_day2_CustomTable;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			files = (
 				B75CDDF01ADD9DF7002A7CC0 /* Main.storyboard in Resources */,
 				B75CDDF51ADD9DF7002A7CC0 /* LaunchScreen.xib in Resources */,
+				B78F28701AE024430076ED65 /* recipes.plist in Resources */,
 				B75CDDF21ADD9DF7002A7CC0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +426,7 @@
 				B75CDE061ADD9DF7002A7CC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B75CDE071ADD9DF7002A7CC0 /* Build configuration list for PBXNativeTarget "bml_day2_CustomTableTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +435,7 @@
 				B75CDE091ADD9DF7002A7CC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -103,6 +103,48 @@
             </objects>
             <point key="canvasLocation" x="785" y="447"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HTx-CM-huL">
+            <objects>
+                <navigationController id="2Ad-a7-Npq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="more" id="aAa-PV-6kD"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KQP-ti-lQD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="N7p-Du-fKh" kind="relationship" relationship="rootViewController" id="9FX-vF-C4e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Vw-o5-okX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="780" y="1275"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="vhs-vg-hba">
+            <objects>
+                <viewController id="N7p-Du-fKh" customClass="AboutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NmH-PU-p8m"/>
+                        <viewControllerLayoutGuide type="bottom" id="JTa-ek-WBV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zvt-jH-Bmw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NhB-81-5uf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cWF-Dj-Ytr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sgl-kf-1jO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1268" y="1275"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="sts-CY-5i9">
             <objects>
@@ -115,6 +157,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="EXz-16-Rmj" kind="relationship" relationship="viewControllers" id="bBX-Cc-JxZ"/>
+                        <segue destination="2Ad-a7-Npq" kind="relationship" relationship="viewControllers" id="mWe-WY-dx0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0bg-ab-aYa" userLabel="First Responder" sceneMemberID="firstResponder"/>

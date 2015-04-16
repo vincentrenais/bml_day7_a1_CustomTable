@@ -17,6 +17,7 @@
 		B75CDE121ADDB3D1002A7CC0 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B75CDE111ADDB3D1002A7CC0 /* CustomTableViewCell.m */; };
 		B78F28701AE024430076ED65 /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = B78F286F1AE024420076ED65 /* recipes.plist */; };
 		B78F28731AE0401F0076ED65 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B78F28721AE0401F0076ED65 /* DetailViewController.m */; };
+		B78F28761AE05E070076ED65 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B78F28751AE05E070076ED65 /* AboutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		B78F286F1AE024420076ED65 /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipes.plist; sourceTree = "<group>"; };
 		B78F28711AE0401F0076ED65 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		B78F28721AE0401F0076ED65 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B78F28741AE05E070076ED65 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		B78F28751AE05E070076ED65 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,8 @@
 				B78F286F1AE024420076ED65 /* recipes.plist */,
 				B78F28711AE0401F0076ED65 /* DetailViewController.h */,
 				B78F28721AE0401F0076ED65 /* DetailViewController.m */,
+				B78F28741AE05E070076ED65 /* AboutViewController.h */,
+				B78F28751AE05E070076ED65 /* AboutViewController.m */,
 			);
 			path = bml_day2_CustomTable;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B78F28761AE05E070076ED65 /* AboutViewController.m in Sources */,
 				B78F28731AE0401F0076ED65 /* DetailViewController.m in Sources */,
 				B75CDDEA1ADD9DF7002A7CC0 /* AppDelegate.m in Sources */,
 				B75CDE0F1ADDA2B2002A7CC0 /* CustomTableViewController.m in Sources */,

@@ -17,7 +17,7 @@
 {
     NSMutableArray *recipeNames;
     NSMutableArray *recipeImages;
-    NSMutableArray *recipePrepTime;
+    NSMutableArray *recipePrepTimes;
     BOOL recipeChecked[16];
     
 }
@@ -26,10 +26,10 @@
     [super viewDidLoad];
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"recipes" ofType:@"plist"];
-    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
     recipeNames = [dict objectForKey:@"Name"];
     recipeImages = [dict objectForKey:@"Image"];
-    recipePrepTime = [dict objectForKey:@"PrepTime"];
+    recipePrepTimes = [dict objectForKey:@"PrepTime"];
 }
 
 
@@ -68,7 +68,7 @@
     
     cell.thumbnailImageView.image = [UIImage imageNamed:[recipeImages objectAtIndex:indexPath.row]];
     
-    cell.prepTimeLabel.text = [recipePrepTime objectAtIndex:indexPath.row];
+    cell.prepTimeLabel.text = [recipePrepTimes objectAtIndex:indexPath.row];
     
     // Configure the cell...
     
@@ -86,7 +86,7 @@
 {
     // Remove the row from data model
     [recipeNames removeObjectAtIndex:indexPath.row];
-    [recipePrepTime removeObjectAtIndex:indexPath.row];
+    [recipePrepTimes removeObjectAtIndex:indexPath.row];
     [recipeImages removeObjectAtIndex:indexPath.row];
     
     // Request table view to reload

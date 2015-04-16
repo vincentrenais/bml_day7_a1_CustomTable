@@ -39,7 +39,7 @@
                                     <outlet property="nameLabel" destination="hd6-XF-GZe" id="KNT-kX-PiF"/>
                                     <outlet property="prepTimeLabel" destination="4sT-Ac-4K1" id="bQ7-56-8WG"/>
                                     <outlet property="thumbnailImageView" destination="f2k-J6-hCe" id="0pt-tA-3R9"/>
-                                    <segue destination="F7V-23-3Kx" kind="push" id="CaP-28-U92"/>
+                                    <segue destination="F7V-23-3Kx" kind="push" identifier="showRecipeDetail" id="CaP-28-U92"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -54,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="785" y="447"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="yWr-B3-SmY">
             <objects>
-                <viewController id="F7V-23-3Kx" sceneMemberID="viewController">
+                <viewController id="F7V-23-3Kx" customClass="DetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UZO-5f-aEE"/>
                         <viewControllerLayoutGuide type="bottom" id="qQm-BM-HV9"/>
@@ -76,6 +76,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="2C3-sM-dR3"/>
+                    <connections>
+                        <outlet property="recipeLabel" destination="f03-L1-gtN" id="4He-Bm-0Bh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dgz-nA-l3E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -19,6 +19,7 @@
     NSMutableArray *recipeNames;
     NSMutableArray *recipeImages;
     NSMutableArray *recipePrepTimes;
+    NSMutableArray *recipeDescriptions;
     BOOL recipeChecked[16];
     
 }
@@ -31,6 +32,7 @@
     recipeNames = [dict objectForKey:@"Name"];
     recipeImages = [dict objectForKey:@"Image"];
     recipePrepTimes = [dict objectForKey:@"PrepTime"];
+    recipeDescriptions = [dict objectForKey:@"Description"];
 }
 
 
@@ -135,6 +137,9 @@
         DetailViewController *destViewController = segue.destinationViewController;
         
         destViewController.recipeName = [recipeNames objectAtIndex:indexPath.row];
+        destViewController.recipeDescription = [recipeDescriptions objectAtIndex:indexPath.row];
+        destViewController.recipeImage = [UIImage imageNamed:[recipeImages objectAtIndex:indexPath.row]];
+        
     }
     
 }

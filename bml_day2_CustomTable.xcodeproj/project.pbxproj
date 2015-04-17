@@ -18,8 +18,8 @@
 		B78F28701AE024430076ED65 /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = B78F286F1AE024420076ED65 /* recipes.plist */; };
 		B78F28731AE0401F0076ED65 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B78F28721AE0401F0076ED65 /* DetailViewController.m */; };
 		B78F28761AE05E070076ED65 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B78F28751AE05E070076ED65 /* AboutViewController.m */; };
-		B7D2F0171AE18FF300A991D2 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = B7D2F0151AE18FF300A991D2 /* about.html */; };
-		B7D2F0181AE18FF300A991D2 /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7D2F0161AE18FF300A991D2 /* about.jpg */; };
+		B7D2F01B1AE198F000A991D2 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = B7D2F0191AE198F000A991D2 /* about.html */; };
+		B7D2F01C1AE198F000A991D2 /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7D2F01A1AE198F000A991D2 /* about.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +53,8 @@
 		B78F28721AE0401F0076ED65 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		B78F28741AE05E070076ED65 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		B78F28751AE05E070076ED65 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
-		B7D2F0151AE18FF300A991D2 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = about.html; path = ../../../../../.Trash/about.html; sourceTree = "<group>"; };
-		B7D2F0161AE18FF300A991D2 /* about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = about.jpg; path = ../../../../../.Trash/about.jpg; sourceTree = "<group>"; };
+		B7D2F0191AE198F000A991D2 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = about.html; path = "../../../../../Downloads/book-tabbar-about/about.html"; sourceTree = "<group>"; };
+		B7D2F01A1AE198F000A991D2 /* about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = about.jpg; path = "../../../../../Downloads/book-tabbar-about/about.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +118,8 @@
 		B75CDDE41ADD9DF7002A7CC0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B7D2F0151AE18FF300A991D2 /* about.html */,
-				B7D2F0161AE18FF300A991D2 /* about.jpg */,
+				B7D2F0191AE198F000A991D2 /* about.html */,
+				B7D2F01A1AE198F000A991D2 /* about.jpg */,
 				B75CDDE51ADD9DF7002A7CC0 /* Info.plist */,
 				B75CDDE61ADD9DF7002A7CC0 /* main.m */,
 			);
@@ -226,9 +226,9 @@
 				B75CDDF01ADD9DF7002A7CC0 /* Main.storyboard in Resources */,
 				B75CDDF51ADD9DF7002A7CC0 /* LaunchScreen.xib in Resources */,
 				B78F28701AE024430076ED65 /* recipes.plist in Resources */,
-				B7D2F0171AE18FF300A991D2 /* about.html in Resources */,
+				B7D2F01B1AE198F000A991D2 /* about.html in Resources */,
 				B75CDDF21ADD9DF7002A7CC0 /* Images.xcassets in Resources */,
-				B7D2F0181AE18FF300A991D2 /* about.jpg in Resources */,
+				B7D2F01C1AE198F000A991D2 /* about.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

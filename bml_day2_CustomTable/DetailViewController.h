@@ -11,6 +11,10 @@
 @interface DetailViewController : UIViewController
 
 @property (strong,nonatomic) IBOutlet UILabel *recipeLabel;
-@property (strong, nonatomic) NSString *recipeName;
+@property (strong,nonatomic) NSString *recipeName;
+@property (strong,nonatomic) IBOutlet UIImageView *recipeImageView;
+@property (strong,nonatomic) UIImage *recipeImage;
+@property (strong,nonatomic) IBOutlet UITextView *recipeDescriptionTextField;
+@property (strong,nonatomic) NSString *recipeDescription;
 
 @end

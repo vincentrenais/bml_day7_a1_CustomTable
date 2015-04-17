@@ -19,6 +19,8 @@
     // Do any additional setup after loading the view.
     
     self.recipeLabel.text = self.recipeName;
+    self.recipeImageView.image = self.recipeImage;
+    self.recipeDescriptionTextField.text = self.recipeDescription;
     
     
     

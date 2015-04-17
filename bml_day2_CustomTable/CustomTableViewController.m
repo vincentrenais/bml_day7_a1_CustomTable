@@ -97,13 +97,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSString *selectedRecipe = [recipeNames objectAtIndex:indexPath.row];
+//    NSString *selectedRecipe = [recipeNames objectAtIndex:indexPath.row];
     
-    UIAlertView *messageAlert = [[UIAlertView alloc]initWithTitle:@"Row Selected" message:selectedRecipe delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+//    UIAlertView *messageAlert = [[UIAlertView alloc]initWithTitle:@"Row Selected" message:selectedRecipe delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     
     // Display message alert
     
-    [messageAlert show];
+//    [messageAlert show];
     
     // Code to toggle the checkmark
     

@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "Recipe.h"
 
-@interface CustomTableViewController : UITableViewController
+@interface CustomTableViewController : UITableViewController <UISearchResultsUpdating>
 
 @end

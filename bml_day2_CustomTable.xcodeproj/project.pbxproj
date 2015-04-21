@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B73082841AE1A52100697486 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = B73082821AE1A52100697486 /* about.html */; };
+		B73082851AE1A52100697486 /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B73082831AE1A52100697486 /* about.jpg */; };
+		B74B1B0A1AE5E42500C4DD52 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = B74B1B091AE5E42500C4DD52 /* Recipe.m */; };
 		B75CDDE71ADD9DF7002A7CC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B75CDDE61ADD9DF7002A7CC0 /* main.m */; };
 		B75CDDEA1ADD9DF7002A7CC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B75CDDE91ADD9DF7002A7CC0 /* AppDelegate.m */; };
 		B75CDDF01ADD9DF7002A7CC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B75CDDEE1ADD9DF7002A7CC0 /* Main.storyboard */; };
@@ -15,11 +18,8 @@
 		B75CDE011ADD9DF7002A7CC0 /* bml_day2_CustomTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B75CDE001ADD9DF7002A7CC0 /* bml_day2_CustomTableTests.m */; };
 		B75CDE0F1ADDA2B2002A7CC0 /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B75CDE0E1ADDA2B2002A7CC0 /* CustomTableViewController.m */; };
 		B75CDE121ADDB3D1002A7CC0 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B75CDE111ADDB3D1002A7CC0 /* CustomTableViewCell.m */; };
-		B78F28701AE024430076ED65 /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = B78F286F1AE024420076ED65 /* recipes.plist */; };
 		B78F28731AE0401F0076ED65 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B78F28721AE0401F0076ED65 /* DetailViewController.m */; };
 		B78F28761AE05E070076ED65 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B78F28751AE05E070076ED65 /* AboutViewController.m */; };
-		B7D2F01B1AE198F000A991D2 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = B7D2F0191AE198F000A991D2 /* about.html */; };
-		B7D2F01C1AE198F000A991D2 /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7D2F01A1AE198F000A991D2 /* about.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B73082821AE1A52100697486 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
+		B73082831AE1A52100697486 /* about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = about.jpg; sourceTree = "<group>"; };
+		B74B1B081AE5E42500C4DD52 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
+		B74B1B091AE5E42500C4DD52 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
 		B75CDDE11ADD9DF7002A7CC0 /* bml_day2_CustomTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bml_day2_CustomTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75CDDE51ADD9DF7002A7CC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B75CDDE61ADD9DF7002A7CC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -48,13 +52,10 @@
 		B75CDE0E1ADDA2B2002A7CC0 /* CustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewController.m; sourceTree = "<group>"; };
 		B75CDE101ADDB3D1002A7CC0 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		B75CDE111ADDB3D1002A7CC0 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
-		B78F286F1AE024420076ED65 /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipes.plist; sourceTree = "<group>"; };
 		B78F28711AE0401F0076ED65 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		B78F28721AE0401F0076ED65 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		B78F28741AE05E070076ED65 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		B78F28751AE05E070076ED65 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
-		B7D2F0191AE198F000A991D2 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = about.html; path = "../../../../../Downloads/book-tabbar-about/about.html"; sourceTree = "<group>"; };
-		B7D2F01A1AE198F000A991D2 /* about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = about.jpg; path = "../../../../../Downloads/book-tabbar-about/about.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +97,8 @@
 		B75CDDE31ADD9DF7002A7CC0 /* bml_day2_CustomTable */ = {
 			isa = PBXGroup;
 			children = (
+				B74B1B081AE5E42500C4DD52 /* Recipe.h */,
+				B74B1B091AE5E42500C4DD52 /* Recipe.m */,
 				B75CDE101ADDB3D1002A7CC0 /* CustomTableViewCell.h */,
 				B75CDE111ADDB3D1002A7CC0 /* CustomTableViewCell.m */,
 				B75CDE0D1ADDA2B2002A7CC0 /* CustomTableViewController.h */,
@@ -106,7 +109,6 @@
 				B75CDDF11ADD9DF7002A7CC0 /* Images.xcassets */,
 				B75CDDF31ADD9DF7002A7CC0 /* LaunchScreen.xib */,
 				B75CDDE41ADD9DF7002A7CC0 /* Supporting Files */,
-				B78F286F1AE024420076ED65 /* recipes.plist */,
 				B78F28711AE0401F0076ED65 /* DetailViewController.h */,
 				B78F28721AE0401F0076ED65 /* DetailViewController.m */,
 				B78F28741AE05E070076ED65 /* AboutViewController.h */,
@@ -118,8 +120,8 @@
 		B75CDDE41ADD9DF7002A7CC0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B7D2F0191AE198F000A991D2 /* about.html */,
-				B7D2F01A1AE198F000A991D2 /* about.jpg */,
+				B73082821AE1A52100697486 /* about.html */,
+				B73082831AE1A52100697486 /* about.jpg */,
 				B75CDDE51ADD9DF7002A7CC0 /* Info.plist */,
 				B75CDDE61ADD9DF7002A7CC0 /* main.m */,
 			);
@@ -225,10 +227,9 @@
 			files = (
 				B75CDDF01ADD9DF7002A7CC0 /* Main.storyboard in Resources */,
 				B75CDDF51ADD9DF7002A7CC0 /* LaunchScreen.xib in Resources */,
-				B78F28701AE024430076ED65 /* recipes.plist in Resources */,
-				B7D2F01B1AE198F000A991D2 /* about.html in Resources */,
+				B73082841AE1A52100697486 /* about.html in Resources */,
 				B75CDDF21ADD9DF7002A7CC0 /* Images.xcassets in Resources */,
-				B7D2F01C1AE198F000A991D2 /* about.jpg in Resources */,
+				B73082851AE1A52100697486 /* about.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B78F28761AE05E070076ED65 /* AboutViewController.m in Sources */,
+				B74B1B0A1AE5E42500C4DD52 /* Recipe.m in Sources */,
 				B78F28731AE0401F0076ED65 /* DetailViewController.m in Sources */,
 				B75CDDEA1ADD9DF7002A7CC0 /* AppDelegate.m in Sources */,
 				B75CDE0F1ADDA2B2002A7CC0 /* CustomTableViewController.m in Sources */,

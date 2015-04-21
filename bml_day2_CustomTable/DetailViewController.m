@@ -1,9 +1,9 @@
 //
 //  DetailViewController.m
-//  bml_day2_CustomTable
+//  CustomTable
 //
-//  Created by Vincent Renais on 2015-04-16.
-//  Copyright (c) 2015 Vincent Renais. All rights reserved.
+//  Created by Vincent Renais on 2015-04-14.
+//  Copyright (c) 2014 AppCoda. All rights reserved.
 //
 
 #import "DetailViewController.h"
@@ -14,16 +14,19 @@
 
 @implementation DetailViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
-    self.recipeLabel.text = self.recipeName;
-    self.recipeImageView.image = self.recipeImage;
-    self.recipeDescriptionTextField.text = self.recipeDescription;
+    self.title = self.recipe.name;
+    self.prepTimeLabel.text = self.recipe.prepTime;
+    self.recipeImageView.image = [UIImage imageNamed:self.recipe.image];
     
-    
-    
+    NSMutableString *ingredientsText = [NSMutableString string];
+    for (NSString* ingredient in self.recipe.ingredients) {
+        [ingredientsText appendFormat:@"%@\n", ingredient];
+    }
+    self.ingredientsTextView.text = ingredientsText;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,13 +35,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

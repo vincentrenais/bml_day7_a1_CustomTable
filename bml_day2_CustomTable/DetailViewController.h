@@ -1,20 +1,20 @@
 //
 //  DetailViewController.h
-//  bml_day2_CustomTable
+//  CustomTable
 //
-//  Created by Vincent Renais on 2015-04-16.
-//  Copyright (c) 2015 Vincent Renais. All rights reserved.
+//  Created by Vincent Renais on 2015-04-14.
+//  Copyright (c) 2014 AppCoda. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "Recipe.h"
 
 @interface DetailViewController : UIViewController
 
-@property (strong,nonatomic) IBOutlet UILabel *recipeLabel;
-@property (strong,nonatomic) NSString *recipeName;
-@property (strong,nonatomic) IBOutlet UIImageView *recipeImageView;
-@property (strong,nonatomic) UIImage *recipeImage;
-@property (strong,nonatomic) IBOutlet UITextView *recipeDescriptionTextField;
-@property (strong,nonatomic) NSString *recipeDescription;
+@property (weak, nonatomic) IBOutlet UIImageView *recipeImageView;
+@property (weak, nonatomic) IBOutlet UILabel *prepTimeLabel;
+@property (weak, nonatomic) IBOutlet UITextView *ingredientsTextView;
+
+@property (nonatomic, strong) Recipe *recipe;
 
 @end

@@ -1,9 +1,9 @@
 //
 //  AboutViewController.m
-//  bml_day2_CustomTable
+//  CustomTable
 //
-//  Created by Vincent Renais on 2015-04-16.
-//  Copyright (c) 2015 Vincent Renais. All rights reserved.
+//  Created by Vincent Renais on 2015-04-14.
+//  Copyright (c) 2014 AppCoda. All rights reserved.
 //
 
 #import "AboutViewController.h"
@@ -16,13 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     // Add code to load web content in UIWebView
-    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"about.html" ofType:nil]];
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"about.html" ofType:nil]];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [self.webView loadRequest:request];
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,13 +29,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

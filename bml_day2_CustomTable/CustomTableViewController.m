@@ -25,7 +25,7 @@
     [super viewDidLoad];
     
     // Initialize the recipes array
-    // Initialize the recipes array
+    
     Recipe *recipe1 = [Recipe new];
     recipe1.name = @"Egg Benedict";
     recipe1.prepTime = @"30 min";
